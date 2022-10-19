@@ -4,7 +4,7 @@
 
 TEST_CASE( "Tests", "[T2]" ) {
     REQUIRE( current(20,10,10) == 5 );
-    REQUIRE( current(50,20,35) == 69/35 );
-    REQUIRE( current(10,90,45) == 8/3 );
+    REQUIRE( current(50,20,35) == float(69) / float(35) );
+    REQUIRE( current(10,90,45) == float(8) / float(3) );
 }
 
