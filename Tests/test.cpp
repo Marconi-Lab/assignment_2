@@ -2,14 +2,9 @@
 #include "catch.hpp"
 #include "../main.cpp"
 
-TEST_CASE( "1: 1 to the power of 0", "[multi-file:2]" ) {
-    REQUIRE( power(1,0) == 1 );
-}
-
-TEST_CASE( "2: Powers of integers", "[multi-file:2]" ) {
-    REQUIRE( power(1,8) == 1 );
-    REQUIRE( power(2,3) == 8 );
-    REQUIRE( power(3,3) == 27 );
-    REQUIRE( power(10,2) == 100);
+TEST_CASE( "Tests", "[T2]" ) {
+    REQUIRE( current(20,10,10) == 5 );
+    REQUIRE( current(50,20,35) == 69/35 );
+    REQUIRE( current(10,90,45) == 8/3 );
 }
 
