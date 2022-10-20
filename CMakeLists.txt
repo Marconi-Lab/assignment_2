@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Test_3 LANGUAGES CXX)
+project(Test LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Test_3 Func.cpp)
+add_executable(Test main.cpp)
 
-install(TARGETS Test_3
+install(TARGETS Test
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
